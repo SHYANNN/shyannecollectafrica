@@ -1,0 +1,353 @@
+.hero{
+    background-color: #4678ef;
+    width: 100vw;
+    padding-bottom: 0;
+}
+/* -----HEADER----- */
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: .6em;
+    padding-bottom: 2em;
+    gap: 8em;
+    width: 98%;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    width: 120px;
+    position:absolute;
+    left: 50px;
+}
+.collect, .cancel{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+}
+.nav-links ul{
+    display: flex;
+    padding-top: 1em;
+}
+.nav-links ul a {
+    color: #fff;
+    padding: .25em .25em 2em .25em;
+    margin: 0 .4em;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.nav-specials{
+    display: flex;
+    margin-left: 3em;
+    align-items: center;
+    gap: 1.5em;
+}
+.stores{
+    display: flex;
+    gap: 1em;
+}
+.login{
+    background-color: #fff;
+    color: #6b96f3;
+    padding: .9em 2.1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hover{
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 17rem;
+    top: 2.5rem;
+    right: -7rem;
+    padding:2em 1em; 
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+    box-shadow: 0 28px 24px 0 rgb(0 0 0 / 24%);;
+}
+.hover:hover .sub-menu{
+    display: flex;
+}
+.product{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.img-p>svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.product-text{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    cursor: pointer;
+}
+.product-text>:nth-child(1){
+    color: #1e155b;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.product-text:hover :nth-child(1){
+    color: var(--bs-yellow);
+}
+.product-text>:nth-child(2){
+    color: #9895b8;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    max-width: 220px;
+}
+/* SECTION-MAIN */
+section.main-h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7.8em;
+    margin: 3.6em auto 0;
+}
+.main-heading{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    max-width: 900px;
+    align-items: center;
+    font-size: 4.6rem;
+    margin-bottom: .5em;
+}
+.main-info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: .8em;
+}
+.main-buttons{
+    display: flex;
+    gap: 2em;
+}
+.yellow{
+    background-color: var(--bs-yellow);
+    color: black;
+ 
+}
+.white{
+    background-color: white;
+    color: #6b96f3;
+}
+section.hero-image{
+    display: flex;
+    align-items:flex-end ;
+    margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:1177px){
+    .header{
+        gap: 5em;
+    }
+}
+@media(max-width:1135px){
+    .header{
+        gap: 3em;
+    }
+}
+@media(max-width:1126px){
+    .logo{
+        left: 30px;
+    }
+}
+@media(max-width:1101px){
+    .nav-specials{
+        margin-left: 2em;
+    }
+    .nav-links ul a {
+        padding: .25em .20em 2em .20em;
+        margin: 0 .2em;
+    }
+}
+@media(max-width:1055px){
+    .nav-specials{
+        gap: 1em;
+    }
+    .stores{
+        gap: .5em;
+    }
+}
+@media(max-width:1039px){
+    .login{
+        padding: .9em 1.8em;
+    }
+    .stores>img{
+        width: 8rem;
+    }
+}
+@media(max-width:1009px){
+    .header{
+        gap: 2em;
+    }
+    
+}
+@media(max-width:1000px){
+    .stores>img{
+        width: 10rem;
+    }
+    .login{
+        padding-right: 2.1em;
+        padding-left: 2em;
+    }
+}
+@media(max-width:991px){
+    .main-buttons{
+        display: flex;
+        gap: 1em;
+    }
+    .header{
+        width: 100%;
+    }
+    .navbar{
+        position: absolute;
+        top:0 ;
+        flex-direction: column;
+        right: 0;
+        width: 100vw;
+        height: 120vh;  
+        background-color: #fff;  
+        display: hidden;
+    }
+    .logo{
+        width: 120px;
+        position:absolute;
+        left: 30px;
+        display: block;
+        top: 20px;
+    }
+    .collect{
+        width: 120px;
+        position:absolute;
+        left: 30px;
+        top: 20px;
+        display: block;
+    }
+    .cancel{
+        display: block;
+        position: absolute;
+        right: 33px;
+        font-size: 1.6rem;
+        top: 25px;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        padding:  6em 1.5em 0;
+        gap: 1.5em;
+    }
+    .nav-links ul a {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .nav-specials{
+        flex-direction: column;
+        margin-left: 2.3em;
+        align-items: flex-start;
+        gap: 1em;
+        margin-top: 3em;
+    }
+    .stores{
+        gap: .5em;
+    }
+    .login{
+        background-color: #f5f6fa
+    }
+}
+@media(max-width:877px){
+    .main-heading{
+        font-size: 4.4rem;
+    }
+}
+@media(max-width:841px){
+    .main-heading{
+        font-size: 4.2rem;
+    }
+}
+@media(max-width:804px){
+    .main-heading{
+        font-size: 4.6rem;
+        line-height: 1.4;
+    }
+}
+@media(max-width:767px){
+    .main-heading{
+        text-align: left;
+        font-size: 3rem;
+        line-height: 1.3;
+    }
+    .navbar{
+        height: 80vh;
+    }
+    .main-buttons{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .main-info{
+        margin-bottom: 1em;
+        text-align: left;
+        display: block;
+        max-width: 600px;
+    }
+}
+@media(max-width:500px){
+    .navbar{
+        height: 100vh;
+    }
+}
+@media(max-width:463px){
+    .main-buttons{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .main-info{
+        max-width: 100%;
+    }
+}
+@media(max-width:378px){
+    .main-heading{
+        font-size: 2.9rem;
+    }
+}
+@media(max-width:368px){
+    .main-heading{
+        font-size: 2.8rem;
+    }
+    .stores{
+        gap: .3em;
+        flex-direction: column;
+    }
+    .nav-specials{
+        gap: .3em;
+    }
+}
+@media(max-width:px){
+    
+}
+@media(max-width:px){
+    
+}
+@media(max-width:px){
+    
+}
+@media(max-width:px){
+    
+}
+@media(max-width:px){
+    
+}
+
